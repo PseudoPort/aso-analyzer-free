@@ -1,0 +1,39 @@
+{
+  "name": "aso-analyzer-free",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "api": "node api-server.js",
+    "dev": "concurrently \"npm run api\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build",
+    "serve": "cd frontend && npm run preview",
+    "demo": "node demo.js",
+    "setup-check": "node setup-check.js",
+    "test-config": "node test-advanced-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PseudoPort/aso-analyzer-free.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PseudoPort/aso-analyzer-free/issues"
+  },
+  "homepage": "https://github.com/PseudoPort/aso-analyzer-free#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.55.0",
+    "@google/generative-ai": "^0.21.0",
+    "app-store-scraper": "^0.18.0",
+    "aso-v2": "^2.0.14",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0"
+  }
+}
